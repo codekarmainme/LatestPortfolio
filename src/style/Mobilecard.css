@@ -1,0 +1,16 @@
+.mobile-cont{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   box-shadow: 0 4px 5px 3px rgba(64, 136, 53, 0.459);
+   padding: 10px;
+   gap: 10px; 
+}
+@media (max-width: 767px) {
+    .mobile-cont{
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
