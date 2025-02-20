@@ -399,7 +399,7 @@ html tilt{
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: #0a1305;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -623,7 +623,9 @@ html tilt{
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
-
+.dwn-btn{
+  margin-top: 100px;
+}
   .resume-right {
     padding-right: 15px !important;
     padding-left: 15px !important;

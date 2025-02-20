@@ -15,10 +15,17 @@ import {
   
   SiDjango 
 } from 'react-icons/si'
+import { TbBrandReactNative } from 'react-icons/tb';
 
 function Techstack() {
   return (
     <Row style={{justifyContent: 'center', paddingBottom: '50px'}}>
+    <Col xs={4} md={2} className="tech-icons">
+        <SiFlutter />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <TbBrandReactNative />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <MdHtml />
       </Col>
@@ -37,9 +44,7 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiTensorflow />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFlutter />
-      </Col>
+      
     
       <Col xs={4} md={2} className="tech-icons">
         <FaGit />

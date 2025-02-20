@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
-import pdf from "../../Assets/MIKI SHIBABAW ESHETIE cv.pdf";
+import pdf from "../../Assets/Mycv.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import ReactGA from "react-ga";
 
@@ -16,7 +16,7 @@ function Resume() {
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button variant="primary" href={pdf} target="_blank">
+          <Button className='dwn-btn 'variant="primary" href={pdf} target="_blank">
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>
@@ -37,10 +37,10 @@ function Resume() {
               date="June 2020 - April 2021"
               content={[
                 " I expanded my skills by learning C#, Java, and developing desktop applications..",
-                "Build Hospital information system which has servel feature.",
+                "Build Hospital information system which has several feature.",
               ]}
             />
-            <h3 className="resume-title">Website Application</h3>
+            
             <Resumecontent
               title="Diving into Real developer"
               date="April 2020 - present"
@@ -78,7 +78,7 @@ function Resume() {
             <Resumecontent
               title=""
               content={[
-                `I stood first in my Department and graduate in a very distiniction status.`,
+                `I stood first in my Department and graduate in a very high distiniction status.`,
                 `I Develop unique AI based application in 2023.`,
               ]}
             />

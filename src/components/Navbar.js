@@ -84,7 +84,7 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen style={{marginBottom: '2px'}} />{' '}
-                Projects
+                Portfolio
               </Nav.Link>
             </Nav.Item>
 

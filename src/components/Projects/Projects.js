@@ -5,13 +5,13 @@ import Particle from "../Particle";
 import ecommerce from "../../Assets/Projects/ecommerce.PNG";
 import movie from "../../Assets/Projects/movie.PNG";
 import weather from "../../Assets/Projects/weather.PNG";
-
-
+import foodapp from "../../Assets/fodoapp.png";
+import fitnessapp from '../../Assets/iPhone 16.png';
+import housesell from '../../Assets/housesell.png';
 import ReactGA from "react-ga";
-import Mobileappscard from "./Mobileappscard";
+
 
 function Projects() {
-  const[iswebsiteprojectshown,setWebsiteprojectshown]=useState(true);
 
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
@@ -26,30 +26,38 @@ function Projects() {
         <p style={{ color: "white" }}>
           You can Browse my recent works.
         </p>
-        <div style={{
-          display:'flex',
-          flexDirection:'row',
-          justifyContent:"center",
-          gap:'50px'}}>
-         <button style={{
-          backgroundColor: iswebsiteprojectshown?"#38583c":"transparent",
-          border: '#5bf572 solid 1px',
-          color:"white",
-          borderRadius:'5px',
-          padding:'5px'
-         }} 
-         onClick={()=>setWebsiteprojectshown(true)}>Websites</button>
-         <p>"    "</p>
-         <button style={{
-          backgroundColor:iswebsiteprojectshown?"transparent":"#38583c",
-          border: '#5bf572 solid 1px',
-          color:"white",
-          borderRadius:'5px',
-          padding:'5px'
-         }} 
-         onClick={()=>setWebsiteprojectshown(false)}>Mobile Apps</button>
-        </div>
-        {iswebsiteprojectshown ? <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+       
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={foodapp}
+              isBlog={false}
+              title="Food Ordering Platform"
+              description="Explore popular foods, manage orders, and enjoy seamless cart functionality."
+              link="https://github.com/amexyegondar/React_weather_web_application"
+              liveLink='https://react-weather-web-application-two.vercel.app'
+            />
+          </Col>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={fitnessapp}
+              isBlog={false}
+              title="Eskista Fitness App"
+              description="Work out at home, track your stats, and stay motivated with weekly insights."
+              link="https://github.com/amexyegondar/React_weather_web_application"
+              liveLink='https://react-weather-web-application-two.vercel.app'
+            />
+          </Col>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={housesell}
+              isBlog={false}
+              title="House Broker App"
+              description="Post and manage property listings with real-time Firebase integration and dynamic UI."
+              link="https://github.com/amexyegondar/React_weather_web_application"
+              liveLink='https://react-weather-web-application-two.vercel.app'
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ecommerce}
@@ -89,11 +97,11 @@ function Projects() {
               liveLink='https://react-weather-web-application-two.vercel.app'
             />
           </Col>
+          
 
           
-        </Row>:
-        <Mobileappscard/>
-        }
+        </Row>
+       
       </Container>
     </Container>
   );
